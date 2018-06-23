@@ -386,7 +386,20 @@ class MySql{
         return $opdrachten;
     }
     public function getOpdracht($id){
-        
+        $query = "SELECT * FROM opdracht WHERE id =".$id.";";
+        $data = $this->selectQuery($query);
+        $opdracht = new Opdracht();
+        foreach($data as $value){
+            $opdracht->setId($value["id"]);
+            $opdracht->setName($value["name"]);
+            $opdracht->setBeschrijving($value["beschrijving"]);
+            $opdracht->setCategory($value["category"]);
+            $opdracht->setStatus($value["status"]);
+            $opdracht->setCreator($value["creator"]);
+            $opdracht->setAssignedTo($value["AssignedTo"]);
+            $opdracht->setDate($value["date"]);
+        }
+        return $opdracht;
     }
 
     public function createStatus($status){
@@ -397,7 +410,7 @@ class MySql{
         return $this->performQuery($query);
     }
     public function editStatus($status){
-
+        
     }
     public function removeStatus($status){
 
