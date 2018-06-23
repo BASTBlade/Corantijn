@@ -1,0 +1,95 @@
+body{
+
+}
+.form-control{
+    display: inherit;
+}
+.navbar{
+    width: 100%;
+    background: rgba(51, 204, 204, 0.7);
+    border-bottom: solid 1px black;
+    color: black;
+}
+.nav-item{
+    color: black;
+    text-decoration: underline;
+}
+#loginBlock{
+    margin:auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 250px;
+}
+.showUser{
+    float:right;
+    display:block;
+}
+.red{
+    color:Red;
+}
+.headerText{
+    font-size: 20px;
+}
+.logo{
+    height: 80%;
+}
+
+
+/* Admin panel styling */
+.panel{
+    margin:10px auto;
+    width: 70vw;
+    border: 1px solid black;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Categories */
+#categories{
+    margin: 10px auto;
+    width: 55vw;
+    padding: 10px;
+}
+.categorybox{
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid black;
+    text-align: center;
+}
+.protocol{
+    display: block;
+}
+
+/* Show Protocols */
+#protocolShow{
+    width: 70vw;
+    padding: 5px;
+    margin: 10px auto;
+}
+#protocolShow>p{
+    display:inline;
+}
+img{
+    float:right;
+}
+.protocolText{
+    display: block;
+    height: 125%;
+}
+
+.footer-copyright{
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-opdrachten{
+    background: rgba(79, 228, 42, 0.637);
+}
